@@ -1,0 +1,6 @@
+﻿/* Localized versions of Info.plist keys */
+
+CFBundleName = "QuakeSpasm-Spiked";
+CFBundleShortVersionString = "0.96.0";
+CFBundleGetInfoString = "QuakeSpasm-Spiked 0.96.0, Copyright 2023 by the QuakeSpasm team.";
+NSHumanReadableCopyright = "Copyright 2023 by the QuakeSpasm team.";

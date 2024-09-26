@@ -1,0 +1,26 @@
+name: macOS CI
+
+on:
+  push
+
+jobs:
+  build:
+    name: Build macOS
+    runs-on: macos-12
+    strategy:
+      fail-fast: false
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: macOS Build
+      run: |
+          cd MacOSX
+          ./build-macos.sh
+
+    - name: Upload macOS artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: macos
+        path: |
+          MacOSX/build/Release/*.zip
